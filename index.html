@@ -41,7 +41,7 @@
           <div class="input_container inputFirstName">
             <p>First Name</p>
             <input
-              placeholder="Enter First Name"
+              placeholder="Mehrab"
               name="firstname"
               oninput="changeing(event)"
             />
@@ -50,7 +50,7 @@
           <div class="input_container inputLastName">
             <p>Last Name</p>
             <input
-              placeholder="Enter Last Name"
+              placeholder="Bozorgi"
               name="lastname"
               oninput="changeing(event)"
             />
@@ -59,7 +59,7 @@
           <div class="input_container inputEmail">
             <p>Email</p>
             <input
-              placeholder="Enter Email"
+              placeholder="Mehrabbozorgi.business@gmail.com"
               name="email"
               oninput="changeing(event)"
             />
@@ -68,7 +68,7 @@
           <div class="input_container inputAddress">
             <p>Address</p>
             <input
-              placeholder="Enter Address"
+              placeholder="33062 Zboncak isle"
               name="address"
               oninput="changeing(event)"
             />
@@ -78,7 +78,7 @@
             <p>Contact Number</p>
             <input
               oninput="changeing(event)"
-              placeholder="Enter Contact Number"
+              placeholder="58077.79"
               name="contactnumber"
               type="number"
               onwheel="return false;"
@@ -87,32 +87,38 @@
           </div>
           <div class="input_container inputCity">
             <p>City</p>
-            <select name="city" id="city" oninput="changeing(event)">
-              <option value="1" selected>Sóc Sơn</option>
-              <option value="2">Đông anh</option>
-              <option value="3">Mê Linh</option>
-              <option value="4">Hoài Đức</option>
-              <option value="5">Mỹ Đình</option>
-              <option value="6">Đống Đa</option>
-            </select>
+            <div class="custom_select">
+              <select name="city" id="city" oninput="changeing(event)">
+                <option value="1" selected>Sóc Sơn</option>
+                <option value="2">Đông anh</option>
+                <option value="3">Mê Linh</option>
+                <option value="4">Hoài Đức</option>
+                <option value="5">Mỹ Đình</option>
+                <option value="6">Đống Đa</option>
+              </select>
+              <i class="fa-solid fa-angle-down"></i>
+            </div>
           </div>
           <div class="input_container inputState">
             <p>State</p>
-            <select name="state" id="state" oninput="changeing(event)">
-              <option value="1" selected>Hà Nội</option>
-              <option value="2">Nam Định</option>
-              <option value="3">Bắc Ninh</option>
-              <option value="4">Hưng Yên</option>
-              <option value="5">Bắc Giang</option>
-              <option value="6">Cao Bằng</option>
-            </select>
+            <div class="custom_select">
+              <select name="state" id="state" oninput="changeing(event)">
+                <option value="1" selected>Hà Nội</option>
+                <option value="2">Nam Định</option>
+                <option value="3">Bắc Ninh</option>
+                <option value="4">Hưng Yên</option>
+                <option value="5">Bắc Giang</option>
+                <option value="6">Cao Bằng</option>
+              </select>
+              <i class="fa-solid fa-angle-down"></i>
+            </div>
           </div>
           <div class="input_container inputPassword">
             <p>Password</p>
             <div class="input12">
               <input
                 oninput="changeing(event)"
-                placeholder="Enter Password"
+                placeholder="sbdfbnd65sfdvb s"
                 type="password"
                 name="password"
                 id="password"
@@ -152,6 +158,7 @@
       <strong>Danger!</strong>
       <span>Indicates a dangerous or potentially negative action.</span>
     </div>
+
     <script src="./main.js"></script>
   </body>
 </html>
