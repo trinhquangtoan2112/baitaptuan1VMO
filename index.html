@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body onload="loadData()">
+    <div class="form">
+      <div class="form_header_setting">
+        <i class="fa-regular fa-bell"></i>
+        <img
+          src="https://s3-alpha-sig.figma.com/img/63b9/b6ec/fcbbfb89e172228dac9ea0121de7892b?Expires=1713139200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=nm0Iw6ywEUV1kHC0CljUrX92YfOyuD5Kbmx86-FBHGSig58MW9Rmfgez7PO~mIXunNKUzyLOKDLliwNQM4JB3GunzTplFiW3R7bB6u7J0AJAO6C5DCmu7mP642aMmUXEEC8Ze02H~x1MxKMPWF4NJyFOxeit-3ozvA8vUT4Pwc9boN2t1Cop2BoX2ESImp0Wzh6i0rku6YKM8ViZGFb02vHymVWFyE9OZnkUsclJwhOTaZyfX4HxY6f7Et17EvwhhBqyHJldf2tUhltW~i1w1atguxBzY4viRE1gBLet31kfTjTJHGjDa-h0Mr~2jfY6Ylb43g~aKzyA5cquXhTRMA__"
+          alt="avatar"
+        />
+      </div>
+      <div class="form_header">
+        <h3>Edit profile</h3>
+        <img
+          src="https://s3-alpha-sig.figma.com/img/63b9/b6ec/fcbbfb89e172228dac9ea0121de7892b?Expires=1713139200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=nm0Iw6ywEUV1kHC0CljUrX92YfOyuD5Kbmx86-FBHGSig58MW9Rmfgez7PO~mIXunNKUzyLOKDLliwNQM4JB3GunzTplFiW3R7bB6u7J0AJAO6C5DCmu7mP642aMmUXEEC8Ze02H~x1MxKMPWF4NJyFOxeit-3ozvA8vUT4Pwc9boN2t1Cop2BoX2ESImp0Wzh6i0rku6YKM8ViZGFb02vHymVWFyE9OZnkUsclJwhOTaZyfX4HxY6f7Et17EvwhhBqyHJldf2tUhltW~i1w1atguxBzY4viRE1gBLet31kfTjTJHGjDa-h0Mr~2jfY6Ylb43g~aKzyA5cquXhTRMA__"
+          alt="avatar"
+        />
+      </div>
+
+      <form>
+        <div class="form_body">
+          <div class="input_container inputFirstName">
+            <p>First Name</p>
+            <input
+              placeholder="Enter First Name"
+              name="firstname"
+              oninput="changeing(event)"
+            />
+            <a class="warning" id="errorfirstname"></a>
+          </div>
+          <div class="input_container inputLastName">
+            <p>Last Name</p>
+            <input
+              placeholder="Enter Last Name"
+              name="lastname"
+              oninput="changeing(event)"
+            />
+            <a class="warning" id="errorlastname"></a>
+          </div>
+          <div class="input_container inputEmail">
+            <p>Email</p>
+            <input
+              placeholder="Enter Email"
+              name="email"
+              oninput="changeing(event)"
+            />
+            <a class="warning" id="erroremail"></a>
+          </div>
+          <div class="input_container inputAddress">
+            <p>Address</p>
+            <input
+              placeholder="Enter Address"
+              name="address"
+              oninput="changeing(event)"
+            />
+            <a class="warning" id="erroraddress"></a>
+          </div>
+          <div class="input_container inputContactNumber">
+            <p>Contact Number</p>
+            <input
+              oninput="changeing(event)"
+              placeholder="Enter Contact Number"
+              name="contactnumber"
+              type="number"
+              onwheel="return false;"
+            />
+            <a class="warning" id="errorcontactnumber"></a>
+          </div>
+          <div class="input_container inputCity">
+            <p>City</p>
+            <select name="city" id="city" oninput="changeing(event)">
+              <option value="1" selected>Sóc Sơn</option>
+              <option value="2">Đông anh</option>
+              <option value="3">Mê Linh</option>
+              <option value="4">Hoài Đức</option>
+              <option value="5">Mỹ Đình</option>
+              <option value="6">Đống Đa</option>
+            </select>
+          </div>
+          <div class="input_container inputState">
+            <p>State</p>
+            <select name="state" id="state" oninput="changeing(event)">
+              <option value="1" selected>Hà Nội</option>
+              <option value="2">Nam Định</option>
+              <option value="3">Bắc Ninh</option>
+              <option value="4">Hưng Yên</option>
+              <option value="5">Bắc Giang</option>
+              <option value="6">Cao Bằng</option>
+            </select>
+          </div>
+          <div class="input_container inputPassword">
+            <p>Password</p>
+            <div class="input12">
+              <input
+                oninput="changeing(event)"
+                placeholder="Enter Password"
+                type="password"
+                name="password"
+                id="password"
+              />
+
+              <i
+                class="fa fa-eye off"
+                onclick="showhidePassword(true)"
+                id="passwordoff"
+              ></i>
+              <i
+                class="fa fa-eye-slash on"
+                onclick="showhidePassword(false)"
+                id="passwordon"
+              ></i>
+            </div>
+
+            <a class="warning" id="errorpassword"></a>
+          </div>
+        </div>
+        <div class="button">
+          <button
+            type="button"
+            class="cancel_button"
+            onclick="clearAll(event)"
+            id="cancel_button"
+          >
+            Cancel
+          </button>
+          <button class="save_buton" onclick="SaveAll(event)" id="save_button">
+            Save
+          </button>
+        </div>
+      </form>
+    </div>
+    <div class="alert">
+      <strong>Danger!</strong>
+      <span>Indicates a dangerous or potentially negative action.</span>
+    </div>
+    <script src="./main.js"></script>
+  </body>
+</html>

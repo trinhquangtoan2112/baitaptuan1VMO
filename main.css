@@ -1,0 +1,324 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: "Roboto", sans-serif;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+.form {
+    width: 80%;
+    margin: 20px auto 0;
+
+    padding: 10px 200px;
+    position: relative;
+}
+.form img {
+    width: 120px;
+    height: 120px;
+    border-radius: 500px;
+}
+.form .form_header_setting {
+    position: absolute;
+    top: 2%;
+    right: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 104px;
+}
+.form .form_header_setting i {
+    background-color: #d9d9d9;
+
+    border: 1px solid #d9d9d9;
+    border-radius: 15px;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+}
+.form .form_header_setting i::before {
+    line-height: 30px;
+    width: 20px;
+    height: 24.38px;
+}
+.form .form_header_setting img {
+    width: 40px;
+    height: 40px;
+}
+.form_header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 36px;
+}
+.form_header h3 {
+    font-size: 45px;
+    font-weight: 600;
+    line-height: 52.74px;
+}
+
+.form .form_body {
+    margin: 20px auto 0;
+    display: flex;
+    width: 873px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.form .form_body .input_container {
+    width: 100%;
+    margin: 4px 0;
+    word-wrap: inherit;
+    margin-bottom: 24px;
+}
+.form .form_body .input_container p {
+    font-size: 26px;
+    line-height: 30.74px;
+    font-weight: 600;
+    color: #1c1c1c;
+    margin-bottom: 8px;
+}
+.form .form_body .input_container input {
+    width: 873px;
+    height: 70px;
+    border-radius: 5px;
+    border: 2px solid #858585;
+    padding-left: 27px;
+    font-size: 24px;
+    line-height: 28.13px;
+}
+.form .form_body .input_container input:focus {
+    outline: 2px solid #ff852c;
+    border-color: #ff852c;
+}
+.form .form_body .input_container a {
+    color: red;
+}
+.form .form_body .inputFirstName,
+.form .form_body .inputLastName {
+    width: 405px;
+}
+.form .form_body .inputFirstName input,
+.form .form_body .inputLastName input {
+    width: 405px;
+}
+.form .form_body .inputCity,
+.form .form_body .inputState {
+    width: 405px;
+}
+.form .form_body .input_container select {
+    width: 405px;
+    height: 70px;
+    border-radius: 5px;
+    border: 2px solid #858585;
+    padding-left: 27px;
+    background-color: white;
+    font-size: 24px;
+    line-height: 28.13px;
+}
+.form .form_body .input_container select option {
+    width: 405px;
+    height: 70px;
+    border-radius: 5px;
+    border: 2px solid #858585;
+    padding-left: 27px;
+    background-color: white;
+    font-size: 24px;
+    line-height: 28.13px;
+}
+.form .form_body .inputPassword {
+    margin-bottom: 53px;
+}
+.form .form_body .inputPassword .input12 {
+    position: relative;
+}
+.form .form_body .inputPassword .input12 .on {
+    position: absolute;
+    top: 50%;
+    right: 2%;
+    cursor: pointer;
+    transform: translateY(-50%);
+}
+.form .form_body .inputPassword .off {
+    display: none;
+}
+
+.form .button {
+    display: flex;
+    width: 400px;
+    justify-content: space-between;
+}
+
+.form .button button {
+    width: 180px;
+    height: 55px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 28px;
+    line-height: 32.84px;
+    font-weight: 400;
+}
+.form .button .save_buton {
+    color: white;
+    background-color: #ff852c;
+    transition: all 0.5s;
+}
+.form .button .save_buton:hover {
+    color: #ff852c;
+    background-color: white;
+    border: 1px solid #ff852c;
+}
+.form .button .cancel_button {
+    color: #ff852c;
+    background-color: white;
+    border: 1px solid #ff852c;
+    transition: all 0.5s;
+}
+.form .button .cancel_button:hover {
+    color: white;
+
+    background-color: #ff852c;
+}
+.form .button .save_buton:disabled {
+    color: white;
+    background-color: #ff852c;
+    border: 1px solid #ff852c;
+}
+.form .button .cancel_button:disabled {
+    color: #ff852c;
+    background-color: white;
+    border: 1px solid #ff852c;
+}
+.alert {
+    padding: 20px;
+    background-color: #f44336;
+    color: white;
+    text-align: center;
+    position: relative;
+    width: 30%;
+    position: fixed;
+    top: 0%;
+    right: 0%;
+    border-radius: 5px;
+    display: none;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+.alert::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    border-radius: 5px;
+    display: inline-block;
+    height: 4px;
+    animation: animation1 3s;
+    background-color: yellow;
+}
+
+@keyframes animation1 {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 100%;
+    }
+}
+@media (max-width: 500px) {
+    .form {
+        width: 100%;
+        border: none;
+        padding: 10px 2px;
+        position: relative;
+    }
+    .form img {
+        margin-top: 20px;
+    }
+    .form .form_body {
+        width: 100%;
+        border: none;
+        padding: 10px 10px;
+        position: relative;
+    }
+    .form .form_header_setting {
+        max-width: 30px;
+        top: 0%;
+        right: 2%;
+    }
+    .form .form_header_setting img {
+        display: none;
+    }
+
+    .form_header {
+        width: 100%;
+        flex-direction: column;
+    }
+    .form_header h3 {
+        text-align: center;
+        width: 100%;
+    }
+
+    .form .form_body .input_container input {
+        padding-left: 5px;
+        width: 100%;
+    }
+    .form .form_body .input_container select {
+        padding-left: 5px;
+    }
+    .form .form_body .inputFirstName input,
+    .form .form_body .inputLastName input {
+        width: 100%;
+    }
+    .form .form_body .inputCity,
+    .form .form_body .inputState {
+        width: 100%;
+    }
+    .form .button {
+        width: 100%;
+        flex-wrap: wrap;
+        padding: 10px 10px;
+    }
+    .form .button button {
+        width: 100%;
+        height: 2.5rem;
+        margin: 10px 0;
+    }
+
+    .alert {
+        padding: 20px;
+        background-color: #f44336;
+        color: white;
+        text-align: center;
+        position: relative;
+        width: 100%;
+        position: fixed;
+        top: 0%;
+        left: 0%;
+        border-radius: 5px;
+        display: none;
+    }
+    .alert::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        border-radius: 5px;
+        display: inline-block;
+        height: 4px;
+        animation: animation1 5s;
+        background-color: yellow;
+    }
+}
