@@ -103,11 +103,7 @@ const SaveAll = (e) => {
         if (errorData[key] != null) {
             inputName = key;
             error.innerHTML = errorData[key];
-            inputForm.forEach(input => {
-                if (input.name == inputName) {
-                    input.value = "";
-                }
-            });
+
         }
         else {
             error.innerHTML = "";
